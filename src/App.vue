@@ -5,7 +5,8 @@
 
     div
       h1 Contador
-      p {{ count }} {{ stringTest }}
+      p {{ count }}
+      p {{ getDouble }}
 
       div
         button(@click="increment") +
@@ -15,23 +16,15 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState, mapMutations, mapGetters } from 'vuex'
 
 export default {
   name: 'app',
 
-  data () {
-    return {
-      test: 'test'
-    }
-  },
-
   computed: {
     ...mapState(['count']),
 
-    stringTest () {
-      return this.test
-    }
+    ...mapGetters(['getDouble'])
   },
 
   methods: {
