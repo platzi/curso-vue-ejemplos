@@ -1,7 +1,6 @@
 <template lang="pug">
-  #app
-    img(src="./assets/logo.png")
-    h1 Vuex
+  main
+    h1 Child
 
     div
       h1 Contador
@@ -13,21 +12,12 @@
         button(@click="decrement") -
       div
         button(@click="increment10") +10
-
-    hr
-    div
-      child
 </template>
 
 <script>
-import Child from './Child.vue'
 import { mapState, mapMutations, mapGetters } from 'vuex'
 
 export default {
-  name: 'app',
-
-  components: { Child },
-
   computed: {
     ...mapState(['count']),
 

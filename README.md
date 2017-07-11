@@ -2,9 +2,9 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 39 - Vuex: Mutations
+## Video 40 - Vuex: Getters
 
-![mutations](./src/assets/mutations.png)
+![getters](./src/assets/getters.png)
 
 ## Instalacion
 
