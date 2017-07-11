@@ -13,6 +13,7 @@
         button(@click="decrement") -
       div
         button(@click="increment10") +10
+        button(@click="incrementAsync") +Async
 
     hr
     div
@@ -39,6 +40,15 @@ export default {
 
     increment10 () {
       this.$store.commit('increment', { number: 10 })
+    },
+
+    incrementAsync () {
+      this.$store.dispatch('incrementAsync', {
+        number: 2
+      })
+      .then(() => {
+        console.log('action terminada...')
+      })
     }
   }
 }
