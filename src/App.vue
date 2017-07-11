@@ -10,10 +10,12 @@
       div
         button(@click="increment") +
         button(@click="decrement") -
+      div
+        button(@click="increment10") +10
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
   name: 'app',
@@ -29,6 +31,14 @@ export default {
 
     stringTest () {
       return this.test
+    }
+  },
+
+  methods: {
+    ...mapMutations(['increment', 'decrement']),
+
+    increment10 () {
+      this.$store.commit('increment', { number: 10 })
     }
   }
 }

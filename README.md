@@ -2,9 +2,9 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 38 - Vuex: Store
+## Video 38 - Vuex: Mutations
 
-![store](./src/assets/store.png)
+![mutations](./src/assets/mutations.png)
 
 ## Instalacion
 
