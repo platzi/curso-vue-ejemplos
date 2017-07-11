@@ -2,9 +2,9 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 24 - Ciclo de Vida
+## Video 27 - Slots
 
-![cycle](./src/assets/cycle.png)
+![slots](./src/assets/slots.png)
 
 ## Instalacion
 
