@@ -2,9 +2,9 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 23 - Reactividad
+## Video 24 - Ciclo de Vida
 
-![reactivity](./src/assets/reactivity.png)
+![cycle](./src/assets/cycle.png)
 
 ## Instalacion
 
