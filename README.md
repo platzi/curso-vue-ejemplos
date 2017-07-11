@@ -2,7 +2,7 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 38 - Vuex: Store
+## Video 39 - Vuex: State
 
 ![store](./src/assets/store.png)
 
