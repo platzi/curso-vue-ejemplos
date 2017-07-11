@@ -2,9 +2,9 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 27 - Slots
+## Video 38 - Vuex: Store
 
-![slots](./src/assets/slots.png)
+![store](./src/assets/store.png)
 
 ## Instalacion
 
