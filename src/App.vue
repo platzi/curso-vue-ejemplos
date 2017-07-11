@@ -18,6 +18,15 @@ export default {
         name: 'Ignacio'
       }
     }
+  },
+
+  methods: {
+    addProp () {
+      // this.person.lastName = 'Anaya'
+      this.$set(this.person, 'lastName', 'Anaya')
+
+      this.person = Object.assign({}, this.person, { a: 1, b: 2})
+    }
   }
 }
 </script>

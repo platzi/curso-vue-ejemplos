@@ -2,9 +2,9 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 20 - Componentes
+## Video 24 - Reactividad
 
-![component](./src/assets/component.png)
+![reactivity](./src/assets/reactivity.png)
 
 ## Instalacion
 
