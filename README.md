@@ -2,7 +2,7 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 40 - Vuex: Getters
+## Video 41 - Vuex: Getters
 
 ![getters](./src/assets/getters.png)
 
