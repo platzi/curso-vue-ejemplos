@@ -1,15 +1,22 @@
 <template lang="pug">
   #app
     img(src="./assets/logo.png")
-    h1 Componentes
-    child
+    h1 Reactividad
+
+    p {{ person }}
+
+    button(@click="addProp") Add Prop
 </template>
 
 <script>
 export default {
   name: 'app',
+
   data () {
     return {
+      person: {
+        name: 'Ignacio'
+      }
     }
   }
 }
