@@ -2,7 +2,7 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 38 - Vuex: Mutations
+## Video 39 - Vuex: Mutations
 
 ![mutations](./src/assets/mutations.png)
 
