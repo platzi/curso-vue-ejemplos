@@ -2,7 +2,7 @@
 
 > 👩‍🏫 Ejemplos del Curso de Vue.js Profesional
 
-## Video 24 - Reactividad
+## Video 23 - Reactividad
 
 ![reactivity](./src/assets/reactivity.png)
 
