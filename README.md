@@ -13,6 +13,10 @@
 7. [Vuex: Getters](https://github.com/platzi/curso-vue-ejemplos/tree/video40) - Video 41
 8. [Vuex: Actions](https://github.com/platzi/curso-vue-ejemplos/tree/video42) - Video 42
 
+## Contenido Bonus
+
+1. [Filtros Avanzados](https://github.com/platzi/curso-vue-ejemplos/tree/filters)
+
 ## Instalacion
 
 ``` bash
