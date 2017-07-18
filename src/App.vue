@@ -1,54 +1,29 @@
 <template lang="pug">
   #app
     img(src="./assets/logo.png")
-    h1 Vuex
+    h1 Filtros Avanzados
 
     div
-      h1 Contador
-      p {{ count }}
-      p {{ getDouble }}
-
-      div
-        button(@click="increment") +
-        button(@click="decrement") -
-      div
-        button(@click="increment10") +10
-        button(@click="incrementAsync") +Async
-
-    hr
-    div
-      child
+      p {{ msg | yell }}
+      p {{ now | date }}
+      p {{ amount | currency('USD') }}
 </template>
 
 <script>
-import Child from './Child.vue'
-import { mapState, mapMutations, mapGetters } from 'vuex'
+import yell from './filters/yell'
+import date from './filters/date'
+import currency from './filters/currency'
 
 export default {
   name: 'app',
 
-  components: { Child },
+  filters: { yell, date, currency },
 
-  computed: {
-    ...mapState(['count']),
-
-    ...mapGetters(['getDouble'])
-  },
-
-  methods: {
-    ...mapMutations(['increment', 'decrement']),
-
-    increment10 () {
-      this.$store.commit('increment', { number: 10 })
-    },
-
-    incrementAsync () {
-      this.$store.dispatch('incrementAsync', {
-        number: 2
-      })
-      .then(() => {
-        console.log('action terminada...')
-      })
+  data () {
+    return {
+      msg: 'My name is Ignacio',
+      now: new Date(),
+      amount: 299
     }
   }
 }
