@@ -134,6 +134,6 @@ export default {
 </script>
 ```
 
-![filters](./src/assets/filters.png)
+**Terminamos de ver todos los conceptos mas avanzados sobre filtros, en este [link](https://github.com/platzi/curso-vue-ejemplos/tree/filters) vas a poder ver el código totalmente funcional con todos los ejemplos que vimos en este material.**
 
-En este [link]() vas a poder ver el código totalmente funcional con todos los ejemplos que vimos en este material.
+![filters](./src/assets/filters.png)
