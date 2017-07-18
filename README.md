@@ -1,6 +1,6 @@
 # Filtros Avanzado
 
-## Installation Local vs. Installation Global.
+## Instalación Local vs. Instalación Global.
 En este material vamos a abarcar el concepto de filtros con un poco mas de profundidad.
 Lo primero que vamos a ver es como podemos hacer que un filtro se instale de manera local, es decir que se aplique directamente a un componente especifico y no a toda la aplicación.
 
