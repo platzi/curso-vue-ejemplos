@@ -134,4 +134,6 @@ export default {
 </script>
 ```
 
+![filters](./src/assets/filters.png)
+
 En este [link]() vas a poder ver el código totalmente funcional con todos los ejemplos que vimos en este material.
