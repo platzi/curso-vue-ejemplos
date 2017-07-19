@@ -7,6 +7,7 @@
       p {{ msg | yell }}
       p {{ now | date }}
       p {{ amount | currency('USD') }}
+      a(v-bind:alt="amount | currency('USD')") Link
 </template>
 
 <script>

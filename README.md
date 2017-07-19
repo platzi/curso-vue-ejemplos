@@ -89,12 +89,6 @@ const currencyFilter = function (amount) {
 export default currencyFilter
 ```
 
-### OrderBy
-Vamos a pasar a un ejemplo bastante común pero un poco mas complejo. Imaginen que necesitamos ordenador nuestra colección de canciones utilizando alguno de los campos que tiene que Objeto dentro del arreglo. Utilizando la función nativa `sort` del tipo `Array` podemos hacer lo siguiente:
-
-### FilterBy
-Este ultimo ejemplo es similar al anterior, pero en vez de ordenar queremos filtrar la colección (si, un filtro para filtrar). En este caso usando el método nativo `filter` del tipo `Array` podemos hacer que nuestra colección de canciones se "eliminen" todos esos elementos que no cumplen con una condición, por ejemplo todos los que no se corresponden con alguna variable de búsqueda. Recuerden que al trabajar con filtros lo que cambia es lo que aparece en el HTML pero el origen de los datos, es decir nuestro código JS NUNCA muta su valor.
-
 ## Filtros con Argumentos
 
 Otro concepto importante es que usando filtros también podemos enviar argumentos a la hora de transformar el valor. Vamos a utilizar el filtro `currency` que creamos anteriormente pero esta vez vamos a enviar con un argumento el tipo de moneda que queremos mostrar.
@@ -114,7 +108,7 @@ export default currencyFilter
 <template lang="pug">
   #app
     div
-      p {{ amount | yell('USD') }}
+      p {{ amount | currency('USD') }}
 </template>
 
 <script>
@@ -133,6 +127,36 @@ export default {
 }
 </script>
 ```
+
+## Filtros en `v-bind`
+
+Los filtres pueden y deben ser utilizados dentro de expresiones pero también pueden utilizarse (de la misma manera) en la directiva `v-bind`.
+
+```html
+// Este código pertenece al siguiente archivo ➡️ App.vue
+<template lang="pug">
+  #app
+    a(v-bind:alt="amount | currency('USD')") Link
+</template>
+
+<script>
+import currency from './filters/currency'
+
+export default {
+  name: 'app',
+
+  filters: { currency },
+
+  data () {
+    return {
+      amount: 299
+    }
+  }
+}
+</script>
+```
+
+Tomando como ejemplo el filtro `currency` que creamos anteriormente podemos ver como aplicarlo a una propiedad (en este caso `alt` de un `a`) usando la directiva `v-bind`.
 
 **Terminamos de ver todos los conceptos mas avanzados sobre filtros, en este [link](https://github.com/platzi/curso-vue-ejemplos/tree/filters) vas a poder ver el código totalmente funcional con todos los ejemplos que vimos en este material.**
 
