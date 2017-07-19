@@ -130,7 +130,7 @@ export default {
 
 ## Filtros en `v-bind`
 
-Los filtres pueden y deben ser utilizados dentro de expresiones pero también pueden utilizarse (de la misma manera) en la directiva `v-bind`.
+Los filtros pueden y deben ser utilizados dentro de expresiones pero también pueden utilizarse (con la misma sintaxis) en la directiva `v-bind`.
 
 ```html
 // Este código pertenece al siguiente archivo ➡️ App.vue
