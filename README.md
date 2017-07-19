@@ -158,6 +158,7 @@ export default {
 
 Tomando como ejemplo el filtro `currency` que creamos anteriormente podemos ver como aplicarlo a una propiedad (en este caso `alt` de un `a`) usando la directiva `v-bind`.
 
+---
 **Terminamos de ver todos los conceptos mas avanzados sobre filtros, en este [link](https://github.com/platzi/curso-vue-ejemplos/tree/filters) vas a poder ver el código totalmente funcional con todos los ejemplos que vimos en este material.**
 
 ![filters](./src/assets/filters.png)
